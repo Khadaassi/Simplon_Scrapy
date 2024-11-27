@@ -1,8 +1,8 @@
 import scrapy
 
 
-class TestspiderSpider(scrapy.Spider):
-    name = "testspider"
+class PageProduitSpider(scrapy.Spider):
+    name = "page_produit"
     allowed_domains = ["venessens-parquet.com"]
     start_urls = ["https://venessens-parquet.com/collection/les-parquets-dinterieur/collection-archi/"]
 
@@ -22,4 +22,7 @@ class TestspiderSpider(scrapy.Spider):
             'Reference' : reference,
             'Prix' : prix
         }
+
+
+    
         
