@@ -24,6 +24,7 @@ try:
     
     execute([
         'scrapy',
+        
         'crawl',
         spider,
         '-o',
