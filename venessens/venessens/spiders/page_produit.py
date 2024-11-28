@@ -25,10 +25,11 @@ class PageProduitSpider(scrapy.Spider):
         with open('categories.csv', newline='') as fichier_csv:
             lecteur = csv.DictReader(fichier_csv)
             for ligne in lecteur:
-                urls_categories.append({
-                    'nom_categorie': ligne['nom_categorie'], 
-                    'url_categorie': ligne['url_categorie']
-                })
+                if ligne.get('is_page_list') == 'True':
+                    urls_categories.append({
+                        'nom_categorie': ligne['nom_categorie'], 
+                        'url_categorie': ligne['url_categorie']
+                    })
         return urls_categories
 
     def parse_pages_produits(self, response):
@@ -50,15 +51,3 @@ class PageProduitSpider(scrapy.Spider):
         item['reference_produit'] = response.xpath('//span[@class="reference"]/text()').get()
         item['url_produit'] = response.url
         yield item
-
-        # reference_produit = response.xpath('//span[@class="reference"]/text()').get()
-        # nom_produit = response.xpath('//h1/text()').get()
-        # prix_produit = response.xpath('//span[@class="prix"]/text()').get()
-
-        # yield {
-        #     'nom_categorie': response.meta['nom_categorie'],
-        #     'nom_produit': nom_produit.strip() if nom_produit and nom_produit.strip() else "Nom inconnu",
-        #     'prix_produit': prix_produit.strip() if prix_produit else "Prix non disponible",
-        #     'reference_produit': reference_produit.strip() if reference_produit else "Référence inconnue",
-        #     'url_produit': response.url
-        # }
