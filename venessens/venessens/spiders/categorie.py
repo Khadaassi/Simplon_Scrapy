@@ -1,6 +1,5 @@
 import scrapy
 
-
 class CategorieSpider(scrapy.Spider):
     name = "categorie"
     allowed_domains = ["venessens-parquet.com"]

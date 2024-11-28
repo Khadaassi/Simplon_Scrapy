@@ -9,4 +9,9 @@ import scrapy
 class VenessensItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    
+    Catégorie = scrapy.Field()
+    Nom = scrapy.Field()
+    Prix = scrapy.Field()
+    Reference = scrapy.Field()
+    URL = scrapy.Field()
