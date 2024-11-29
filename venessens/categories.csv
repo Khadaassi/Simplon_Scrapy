@@ -1,17 +1,44 @@
-nom_collection_parent   ,url_collection_parent                                                            ,nom_categorie          ,url_categorie
-Les parquets dinterieur ,https://venessens-parquet.com/collection/les-parquets-dinterieur                 ,Parquet Massif         ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquet-massif/
-Les parquets dinterieur ,https://venessens-parquet.com/collection/les-parquets-dinterieur                 ,Parquet Semi-Massif    ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquet-semi-massif/
-Les parquets dinterieur ,https://venessens-parquet.com/collection/les-parquets-dinterieur                 ,Sol Stratifié          ,https://venessens-parquet.com/collection/les-parquets-dinterieur/sol-stratifie/
-Parquets exterieur      ,https://venessens-parquet.com/collection/parquets-exterieur                      ,Terrasse Bois Résineux ,https://venessens-parquet.com/collection/parquets-exterieur/terrasse-bois-resineux/
-Parquets exterieur      ,https://venessens-parquet.com/collection/parquets-exterieur                      ,Terrasse Composite     ,https://venessens-parquet.com/collection/parquets-exterieur/terrasse-composite/
-Parquets exterieur      ,https://venessens-parquet.com/collection/parquets-exterieur                      ,Terrasse Exotique      ,https://venessens-parquet.com/collection/parquets-exterieur/terrasse-exotique/
-Parquets motifs         ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs ,Dalles de Versailles   ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/dalles-de-versailles/
-Parquets motifs         ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs ,Les Géométriques       ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/les-geometriques/
-Parquets motifs         ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs ,Panneaux               ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/panneaux/
-Parquets motifs         ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs ,Style Français         ,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/style-francais/
-Lhabillage mural latho  ,https://venessens-parquet.com/collection/lhabillage-mural-latho                  ,Fresati (fraisés)      ,https://venessens-parquet.com/collection/lhabillage-mural-latho/fresati-fraises/
-Lhabillage mural latho  ,https://venessens-parquet.com/collection/lhabillage-mural-latho                  ,Move (gaufré)          ,https://venessens-parquet.com/collection/lhabillage-mural-latho/move-gaufre/
-Les accessoires         ,https://venessens-parquet.com/collection/les-accessoires                         ,Pose du Parquet        ,https://venessens-parquet.com/collection/les-accessoires/pose-du-parquet/
-Les accessoires         ,https://venessens-parquet.com/collection/les-accessoires                         ,Pose de Terrasse       ,https://venessens-parquet.com/collection/les-accessoires/pose-de-terrasse/
-Les accessoires         ,https://venessens-parquet.com/collection/les-accessoires                         ,Finition               ,https://venessens-parquet.com/collection/les-accessoires/finition/
-Les accessoires         ,https://venessens-parquet.com/collection/les-accessoires                         ,Entretien du Parquet   ,https://venessens-parquet.com/collection/les-accessoires/entretien-du-parquet/
+nom_categorie,url_categorie,is_page_list
+Les parquets dinterieur,https://venessens-parquet.com/collection/les-parquets-dinterieur,False
+Parquet Massif,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquet-massif/,True
+Parquet Semi-Massif,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquet-semi-massif/,True
+Sol Stratifié,https://venessens-parquet.com/collection/les-parquets-dinterieur/sol-stratifie/,True
+Parquets exterieur,https://venessens-parquet.com/collection/parquets-exterieur,False
+Terrasse Bois Résineux,https://venessens-parquet.com/collection/parquets-exterieur/terrasse-bois-resineux/,True
+Terrasse Composite,https://venessens-parquet.com/collection/parquets-exterieur/terrasse-composite/,True
+Terrasse Exotique,https://venessens-parquet.com/collection/parquets-exterieur/terrasse-exotique/,True
+Parquets motifs,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs,False
+Dalles de Versailles,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/dalles-de-versailles/,True
+Les Géométriques,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/les-geometriques/,True
+Panneaux,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/panneaux/,True
+Style Français,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/style-francais/,True
+Lhabillage mural latho,https://venessens-parquet.com/collection/lhabillage-mural-latho,False
+Fresati (fraisés),https://venessens-parquet.com/collection/lhabillage-mural-latho/fresati-fraises/,True
+Move (gaufré),https://venessens-parquet.com/collection/lhabillage-mural-latho/move-gaufre/,True
+Les accessoires,https://venessens-parquet.com/collection/les-accessoires,False
+Pose du Parquet,https://venessens-parquet.com/collection/les-accessoires/pose-du-parquet/,True
+Pose de Terrasse,https://venessens-parquet.com/collection/les-accessoires/pose-de-terrasse/,True
+Finition,https://venessens-parquet.com/collection/les-accessoires/finition/,True
+Entretien du Parquet,https://venessens-parquet.com/collection/les-accessoires/entretien-du-parquet/,True
+nom_categorie,url_categorie,is_page_list
+Les parquets dinterieur,https://venessens-parquet.com/collection/les-parquets-dinterieur,False
+Parquet Massif,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquet-massif/,True
+Parquet Semi-Massif,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquet-semi-massif/,True
+Sol Stratifié,https://venessens-parquet.com/collection/les-parquets-dinterieur/sol-stratifie/,True
+Parquets exterieur,https://venessens-parquet.com/collection/parquets-exterieur,False
+Terrasse Bois Résineux,https://venessens-parquet.com/collection/parquets-exterieur/terrasse-bois-resineux/,True
+Terrasse Composite,https://venessens-parquet.com/collection/parquets-exterieur/terrasse-composite/,True
+Terrasse Exotique,https://venessens-parquet.com/collection/parquets-exterieur/terrasse-exotique/,True
+Parquets motifs,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs,False
+Dalles de Versailles,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/dalles-de-versailles/,True
+Les Géométriques,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/les-geometriques/,True
+Panneaux,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/panneaux/,True
+Style Français,https://venessens-parquet.com/collection/les-parquets-dinterieur/parquets-motifs/style-francais/,True
+Lhabillage mural latho,https://venessens-parquet.com/collection/lhabillage-mural-latho,False
+Fresati (fraisés),https://venessens-parquet.com/collection/lhabillage-mural-latho/fresati-fraises/,True
+Move (gaufré),https://venessens-parquet.com/collection/lhabillage-mural-latho/move-gaufre/,True
+Les accessoires,https://venessens-parquet.com/collection/les-accessoires,False
+Pose du Parquet,https://venessens-parquet.com/collection/les-accessoires/pose-du-parquet/,True
+Pose de Terrasse,https://venessens-parquet.com/collection/les-accessoires/pose-de-terrasse/,True
+Finition,https://venessens-parquet.com/collection/les-accessoires/finition/,True
+Entretien du Parquet,https://venessens-parquet.com/collection/les-accessoires/entretien-du-parquet/,True

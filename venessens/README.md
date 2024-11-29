@@ -79,6 +79,25 @@ En tant que Data Engineer dans une start-up spécialisée dans la veille concurr
 - Une base de données contenant des données nettoyées et structurées.
 
 ---
+## Example of Outputs
+
+### Categories.csv
+<p align="center">
+    <img src="images/categorie.png" alt="Example of categories CSV" width="600">
+</p>
+
+### Page_produit.csv
+<p align="center">
+    <img src="images/produit.png" alt="Example of page produit CSV" width="600">
+</p>
+
+### Database Structure
+
+<p align="center">
+    <img src="images/ERD.png" alt="Database Structure">
+</p>
+
+---
 
 ## Evaluation Criteria
 
