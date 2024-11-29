@@ -1,7 +1,19 @@
 import sqlite3
 from venessens.items import CategorieItem, ProduitItem
 from itemadapter import ItemAdapter
+import sqlite3
 
+class ProduitPipeline:
+    def open_spider(self, spider):
+        self.connection = sqlite3.connect("venessens.db")
+        self.cursor = self.connection.cursor()
+        self.cursor.execute("""CREATE TABLE IF NOT EXISTS Produits(
+                            nom_categorie VARCHAR(50),
+                            nom_produit VARCHAR(100),
+                            prix_produit VARCHAR(20),
+                            reference_produit VARCHAR(50) PRIMARY KEY,
+                            url_produit VARCHAR(255)
+                            ) """)
 
 # class VenessensPipeline:
 #     def process_item(self, item, spider):

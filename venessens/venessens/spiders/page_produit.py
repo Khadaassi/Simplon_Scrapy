@@ -68,3 +68,4 @@ class PageProduitSpider(scrapy.Spider):
         item['reference_produit'] = response.xpath('//span[@class="reference"]/text()').get()
         item['url_produit'] = response.url
         yield item
+        
