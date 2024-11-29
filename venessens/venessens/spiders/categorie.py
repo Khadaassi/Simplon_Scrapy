@@ -4,23 +4,37 @@ class CategorieSpider(scrapy.Spider):
     name = "categorie"
     allowed_domains = ["venessens-parquet.com"]
     start_urls = ["https://venessens-parquet.com"]
-    url_visiter = set() # set pour éviter les doublons
+    urls_visitees = set()  # Ensemble pour éviter les doublons
+    url_parent = set()
 
     def parse(self, response):
+        elements_categories = response.xpath('//ul[@class="elementor-nav-menu sm-vertical"]//a')
 
-        categories = response.xpath('//ul[@class="elementor-nav-menu sm-vertical"]//a')
+        for element_categorie in elements_categories:
+            url_categorie = element_categorie.xpath('@href').get()
+            nom_categorie = element_categorie.xpath('text()').get()
 
-        for categorie in categories:
-            url = categorie.xpath('@href').get()
-            nom = categorie.xpath('text()').get()
-
-            if url and 'https://venessens-parquet.com/collection' in url and url not in self.url_visiter:
-                self.url_visiter.add(url)
+            if url_categorie and 'https://venessens-parquet.com/collection' in url_categorie and url_categorie not in self.urls_visitees:
+                self.urls_visitees.add(url_categorie)
+                segments_url = url_categorie.rstrip('/').split('/')
+                nom_collection_parent = segments_url[-2]
+                url_collection_parent = "/".join(segments_url[:-1])
+                nom_collection_parent_formatte = nom_collection_parent.replace('-', ' ').capitalize()
 
                 yield {
-                    'Catégorie': nom.strip() if nom else "Nom inconnu",
-                    'URL': url
+                    'nom_categorie': nom_collection_parent_formatte,
+                    'url_categorie': url_collection_parent,
+                    'is_page_list' : False
+                    
                 }
 
-                #yield response.follow(url, callback=self.parse_page_produits)
+                yield {
+                    'nom_categorie': nom_categorie.strip() if nom_categorie else "Nom inconnu",
+                    'url_categorie': url_categorie,
+                    'is_page_list' : True
 
+                }
+
+
+
+                # yield response.follow(url_categorie, callback=self.parse_page_produits)
