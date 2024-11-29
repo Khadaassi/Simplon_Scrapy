@@ -3,7 +3,7 @@
 
 # <p align="center">BricoSimplon - Veille Concurrentielle</p>
 <p align="center">
-    <img src="images/banner.png" alt="Banner">
+    <img src="venessens/images/banner.png" alt="Banner">
 </p>
 
 Ce projet est un système de scraping conçu pour collecter des données tarifaires sur une large gamme de produits pour BricoSimplon, un site de e-commerce spécialisé dans le bricolage et l'aménagement de la maison. L'objectif est de surveiller en temps réel les prix pratiqués par Venessens, un concurrent, afin de fournir des insights précieux pour optimiser la stratégie commerciale de BricoSimplon.
@@ -83,18 +83,18 @@ En tant que Data Engineer dans une start-up spécialisée dans la veille concurr
 
 ### Categories.csv
 <p align="center">
-    <img src="images/categorie.png" alt="Example of categories CSV" width="600">
+    <img src="venessens/images/categorie.png" alt="Example of categories CSV" width="600">
 </p>
 
 ### Page_produit.csv
 <p align="center">
-    <img src="images/produit.png" alt="Example of page produit CSV" width="600">
+    <img src="venessens/images/produit.png" alt="Example of page produit CSV" width="600">
 </p>
 
 ### Database Structure
 
 <p align="center">
-    <img src="images/ERD.png" alt="Database Structure">
+    <img src="venessens/images/ERD.png" alt="Database Structure">
 </p>
 
 ---
@@ -142,9 +142,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Authors
 
 - Sami Kabdani  <a href="https://github.com/Sami-Kbdn" target="_blank"> 
-    <img loading="lazy" src="images/github-mark.png" width="30" height="30" style="vertical-align: middle; margin-left: 15px;" alt="GitHub Logo">
+    <img loading="lazy" src="venessens/images/github-mark.png" width="30" height="30" style="vertical-align: middle; margin-left: 15px;" alt="GitHub Logo">
   </a>
 
 - Khadija Aassi  <a href="https://github.com/Khadaassi" target="_blank"> 
-    <img loading="lazy" src="images/github-mark.png" width="30" height="30" style="vertical-align: middle; margin-left: 15px;" alt="GitHub Logo">
+    <img loading="lazy" src="venessens/images/github-mark.png" width="30" height="30" style="vertical-align: middle; margin-left: 15px;" alt="GitHub Logo">
   </a>
