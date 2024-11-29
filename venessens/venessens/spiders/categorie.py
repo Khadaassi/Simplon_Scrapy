@@ -36,5 +36,3 @@ class CategorieSpider(scrapy.Spider):
                     'url_categorie': url_categorie,
                     'is_page_list' : True
                 }
-
-    #             # yield response.follow(url_categorie, callback=self.parse_page_produits)
