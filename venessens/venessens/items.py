@@ -6,12 +6,10 @@
 import scrapy
 
 
-# class CategorieItem(scrapy.Item):
-#     # define the fields for your item here like:
-#     nom_categorie_parent = scrapy.Field()
-#     url_categorie_parent = scrapy.Field()
-#     nom_categorie = scrapy.Field()
-#     url_categorie = scrapy.Field()
+class CategorieItem(scrapy.Item):
+    nom_categorie = scrapy.Field()
+    url_categorie = scrapy.Field()
+    is_page_list = scrapy.Field()
 
 class ProduitItem(scrapy.Item):
     nom_categorie = scrapy.Field()
@@ -20,7 +18,3 @@ class ProduitItem(scrapy.Item):
     reference_produit = scrapy.Field()
     url_produit = scrapy.Field()
 
-class CategorieItem(scrapy.Item):
-    nom_categorie = scrapy.Field()
-    url_categorie = scrapy.Field()
-    is_page_list = scrapy.Field()
