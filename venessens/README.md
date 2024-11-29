@@ -122,8 +122,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Authors
 
-- Sami Kabdani  
-  [![GitHub Logo](images/github-mark.png)](https://github.com/Sami-Kbdn)
+- Sami Kabdani  <a href="https://github.com/Sami-Kbdn" target="_blank"> 
+    <img loading="lazy" src="images/github-mark.png" width="30" height="30" style="vertical-align: middle; margin-left: 15px;" alt="GitHub Logo">
+  </a>
 
-- Khadija Aassi  
-  [![GitHub Logo](images/github-mark.png)](https://github.com/Khadaassi)
+- Khadija Aassi  <a href="https://github.com/Khadaassi" target="_blank"> 
+    <img loading="lazy" src="images/github-mark.png" width="30" height="30" style="vertical-align: middle; margin-left: 15px;" alt="GitHub Logo">
+  </a>
