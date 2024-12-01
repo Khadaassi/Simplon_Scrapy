@@ -1,4 +1,5 @@
 import scrapy
+from venessens.items import CategorieItem
 
 class CategorieSpider(scrapy.Spider):
     name = "categorie"
@@ -24,19 +25,17 @@ class CategorieSpider(scrapy.Spider):
 
                 if url_collection_parent not in self.urls_parent_visitees:
                     self.urls_parent_visitees.add(url_collection_parent)
-                    yield{
-                        'nom_categorie': nom_collection_parent_formatte,
-                        'url_categorie': url_collection_parent,
-                        'is_page_list' : False
-                    }
-                        
 
-                yield {
-                    'nom_categorie': nom_categorie,
-                    'url_categorie': url_categorie,
-                    'is_page_list' : True
-                }
+                    item_parent = CategorieItem(
+                        nom_categorie=nom_collection_parent_formatte,
+                        url_categorie=url_collection_parent,
+                        is_page_list=False
+                    )
+                    yield item_parent
 
-    #             # yield response.follow(url_categorie, callback=self.parse_page_produits)
-
-
+                item_enfant = CategorieItem(
+                    nom_categorie=nom_categorie,
+                    url_categorie=url_categorie,
+                    is_page_list=True
+                )
+                yield item_enfant
