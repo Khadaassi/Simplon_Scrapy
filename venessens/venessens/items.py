@@ -7,7 +7,6 @@ import scrapy
 
 
 class CategorieItem(scrapy.Item):
-    # define the fields for your item here like:
     nom_categorie = scrapy.Field()
     url_categorie = scrapy.Field()
     is_page_list = scrapy.Field()
@@ -18,3 +17,4 @@ class ProduitItem(scrapy.Item):
     prix_produit = scrapy.Field()
     reference_produit = scrapy.Field()
     url_produit = scrapy.Field()
+
