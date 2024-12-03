@@ -7,7 +7,7 @@
 </p>
 
 Ce projet est un système de scraping conçu pour collecter des données tarifaires sur une large gamme de produits pour BricoSimplon, un site de e-commerce spécialisé dans le bricolage et l'aménagement de la maison. L'objectif est de surveiller en temps réel les prix pratiqués par Venessens, un concurrent, afin de fournir des insights précieux pour optimiser la stratégie commerciale de BricoSimplon.
-
+(Projet fictif dans un cadre de formation data ingénieur & développement IA )
 ---
 
 ## ➤ Menu
@@ -22,7 +22,7 @@ Ce projet est un système de scraping conçu pour collecter des données tarifai
 
 ---
 
-## Project Context
+## Contexte du projet
 
 En tant que Data Engineer dans une start-up spécialisée dans la veille concurrentielle, votre mission est de :
 - Concevoir un système de scraping respectant les contraintes légales et éthiques.
@@ -31,7 +31,7 @@ En tant que Data Engineer dans une start-up spécialisée dans la veille concurr
 
 ---
 
-## Project Structure
+## Structure du projet
 
 - **venessens/**
     - `__init__.py`: Initialisation du module.
@@ -52,14 +52,19 @@ En tant que Data Engineer dans une start-up spécialisée dans la veille concurr
 
 ---
 
-## How to Run
+## Comment exectuter
 
-1. **Installer les dépendances nécessaires :**
+1. **Entrer dans le dossier venessens**
+    ```bash
+    cd venessens
+    ```
+
+2. **Installer les dépendances nécessaires :**
     ```bash
     pip install -r requirements.txt
     ```
 
-2. **Lancer les spiders :**
+3. **Lancer les spiders :**
     - Pour les catégories :
         ```bash
         scrapy crawl categorie -o categories.csv
@@ -79,7 +84,7 @@ En tant que Data Engineer dans une start-up spécialisée dans la veille concurr
 - Une base de données contenant des données nettoyées et structurées.
 
 ---
-## Example of Outputs
+## Exemple de Outputs
 
 ### Categories.csv
 <p align="center">
@@ -91,7 +96,7 @@ En tant que Data Engineer dans une start-up spécialisée dans la veille concurr
     <img src="venessens/images/produit.png" alt="Example of page produit CSV" width="600">
 </p>
 
-### Database Structure
+### Structure Database
 
 <p align="center">
     <img src="venessens/images/ERD.png" alt="Database Structure">
@@ -99,7 +104,7 @@ En tant que Data Engineer dans une start-up spécialisée dans la veille concurr
 
 ---
 
-## Evaluation Criteria
+## Critère d'évaluation
 
 ### Respect des Fonctionnalités Obligatoires :
 - Deux items Scrapy correctement créés pour les catégories et les produits.
@@ -139,7 +144,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-## Authors
+## Auteurs
 
 - Sami Kabdani  <a href="https://github.com/Sami-Kbdn" target="_blank"> 
     <img loading="lazy" src="venessens/images/github-mark.png" width="30" height="30" style="vertical-align: middle; margin-left: 15px;" alt="GitHub Logo">
