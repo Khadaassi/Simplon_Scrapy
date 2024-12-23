@@ -44,7 +44,7 @@ class PageProduitSpider(scrapy.Spider):
             list: Liste de dictionnaires contenant les noms et URLs des catégories.
         """
         urls_categories = []
-        with open('categorie.csv', newline='') as fichier_csv:
+        with open('categories.csv', newline='') as fichier_csv:
             lecteur = csv.DictReader(fichier_csv)
             for ligne in lecteur:
                 # Filtrer uniquement les catégories marquées comme pages de liste
